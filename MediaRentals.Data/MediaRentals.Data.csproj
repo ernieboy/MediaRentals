@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="Sqlite\" />
+    <Folder Include="Queries\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Sqlite\app.db">
