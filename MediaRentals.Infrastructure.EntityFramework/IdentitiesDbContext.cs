@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MediaRentals.Infrastructure.EntityFramework
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class IdentitiesDbContext : IdentityDbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public IdentitiesDbContext(DbContextOptions<IdentitiesDbContext> options)
             : base(options)
         {
         }

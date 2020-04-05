@@ -21,11 +21,11 @@ namespace MediaRentals.Administration
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddDbContext<IdentitiesDbContext>(options =>
                 options.UseSqlite(
                     Configuration.GetConnectionString("IdentityDbConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+                .AddEntityFrameworkStores<IdentitiesDbContext>();
             services.AddRazorPages();
         }
 

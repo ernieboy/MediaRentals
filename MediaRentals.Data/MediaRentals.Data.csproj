@@ -9,7 +9,7 @@
     <Folder Include="Queries\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Sqlite\app.db">
+    <None Include="Sqlite\Identity.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
     </None>
