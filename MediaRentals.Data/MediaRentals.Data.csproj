@@ -9,9 +9,16 @@
     <Folder Include="Queries\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Sqlite\Identity.db">
+    <None Remove="Sqlite\Identity.db" />
+    <None Remove="Sqlite\MediaRentals.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sqlite\Identity.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-    </None>
+    </Content>
+    <Content Include="Sqlite\MediaRentals.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 </Project>
